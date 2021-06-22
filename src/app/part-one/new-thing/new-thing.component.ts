@@ -45,6 +45,7 @@ export class NewThingComponent implements OnInit, OnDestroy {
   }
 
   onSubmit() {
+    console.log("blablabla")
     this.loading = true;
     const thing = new Thing();
     thing.title = this.thingForm.get('title').value;
